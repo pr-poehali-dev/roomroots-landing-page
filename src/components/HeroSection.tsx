@@ -11,16 +11,23 @@ const HeroSection = () => {
             Room<span className="text-emerald-300">Roots</span>
           </h1>
           <p className="text-xl md:text-2xl font-light opacity-90 mb-8">
-            Природная эстетика Карелии в каждом пространстве
+            Природная эстетика Карелии в вашем пространстве
           </p>
           <p className="text-lg opacity-80 max-w-2xl mx-auto mb-12">
             Создаем уникальные композиции из исландской цетрарии и
-            стабилизированного мха для дома, офиса и общественных пространств
+            стабилизированного мха для дома, офиса и всего где душе это угодно!
           </p>
         </div>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-          <button className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 rounded-full font-montserrat font-medium text-lg transition-all duration-300 hover:scale-105 shadow-lg">
+          <button
+            onClick={() =>
+              document
+                .getElementById("product-gallery")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
+            className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 rounded-full font-montserrat font-medium text-lg transition-all duration-300 hover:scale-105 shadow-lg"
+          >
             Посмотреть коллекцию
           </button>
           <button className="border-2 border-white text-white hover:bg-white hover:text-moss-600 px-8 py-4 rounded-full font-montserrat font-medium text-lg transition-all duration-300">

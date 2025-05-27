@@ -41,7 +41,7 @@ const BenefitsSection = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-moss-700 mb-6">
-            Преимущества наших композиций
+            А вы знаете, что наши композиции - это
           </h2>
           <p className="text-xl text-moss-600 max-w-3xl mx-auto">
             Почему стабилизированный мох и цетрария — идеальное решение для

@@ -18,15 +18,22 @@ const ProductGallery = () => {
     },
     {
       title: "Рестораны и кафе",
-      description: "Атмосферные композиции для гостеприимства",
+      description: "Создание уютной атмосферы для гостей",
       image:
         "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       icon: "Coffee",
     },
+    {
+      title: "Отели и спа",
+      description: "Расслабляющие композиции для гостиничного бизнеса",
+      image:
+        "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      icon: "Sparkles",
+    },
   ];
 
   return (
-    <section className="py-20 bg-white relative">
+    <section id="product-gallery" className="py-20 bg-white moss-texture">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-moss-700 mb-6">

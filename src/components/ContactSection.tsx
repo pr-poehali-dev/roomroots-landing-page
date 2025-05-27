@@ -13,7 +13,7 @@ const ContactSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-montserrat font-bold mb-6">
-              Создадим природную гармонию в вашем пространстве
+              Создадим природную гармонию вместе!
             </h2>
             <p className="text-xl opacity-90 mb-8">
               Свяжитесь с нами для консультации и создания уникальной
@@ -51,7 +51,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="font-montserrat font-medium">
-                    Петрозаводск, Карелия
+                    Красногорск, Московская область
                   </p>
                   <p className="text-sm opacity-80">Работаем по всей России</p>
                 </div>
