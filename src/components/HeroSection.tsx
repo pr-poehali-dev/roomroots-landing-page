@@ -1,6 +1,11 @@
+import { useState } from "react";
 import Icon from "@/components/ui/icon";
+import Modal from "@/components/ui/modal";
+import ContactModal from "@/components/ContactModal";
 
 const HeroSection = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden moss-texture">
       <div className="absolute inset-0 nature-gradient opacity-95"></div>
@@ -19,7 +24,7 @@ const HeroSection = () => {
           </p>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
           <button
             onClick={() =>
               document
@@ -30,15 +35,44 @@ const HeroSection = () => {
           >
             Посмотреть коллекцию
           </button>
-          <button className="border-2 border-white text-white hover:bg-white hover:text-moss-600 px-8 py-4 rounded-full font-montserrat font-medium text-lg transition-all duration-300">
-            Заказать консультацию
+          <button
+            onClick={() => setIsModalOpen(true)}
+            className="border-2 border-white text-white hover:bg-white hover:text-moss-600 px-8 py-4 rounded-full font-montserrat font-medium text-lg transition-all duration-300"
+          >
+            Уже хочу!
           </button>
+        </div>
+
+        <div className="flex justify-center space-x-6">
+          <a
+            href="https://t.me/RoomRootsRR"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-12 h-12 bg-white bg-opacity-20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300"
+          >
+            <Icon name="Send" size={20} className="text-white" />
+          </a>
+          <a
+            href="https://vk.com/roomrootsspace"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-12 h-12 bg-white bg-opacity-20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all duration-300"
+          >
+            <Icon name="Users" size={20} className="text-white" />
+          </a>
+          <div className="w-12 h-12 bg-white bg-opacity-20 backdrop-blur-sm rounded-full flex items-center justify-center opacity-50">
+            <Icon name="ShoppingBag" size={20} className="text-white" />
+          </div>
         </div>
       </div>
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
         <Icon name="ChevronDown" size={32} className="opacity-70" />
       </div>
+
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+        <ContactModal />
+      </Modal>
     </section>
   );
 };
