@@ -27,7 +27,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <p className="font-montserrat font-medium">
-                    +7 (977) 407-47-14
+                    +7 (123) 456-78-90
                   </p>
                   <p className="text-sm opacity-80">Звоните с 9:00 до 21:00</p>
                 </div>
@@ -35,18 +35,13 @@ const ContactSection = () => {
 
               <div className="flex items-center space-x-4">
                 <div className="w-12 h-12 bg-azure-500 rounded-full flex items-center justify-center">
-                  <Icon name="Bot" size={20} className="text-white" />
+                  <Icon name="Mail" size={20} className="text-white" />
                 </div>
                 <div>
-                  <a
-                    href="https://t.me/RoomRoots_bot"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="font-montserrat font-medium hover:text-emerald-300 transition-colors"
-                  >
-                    @RoomRoots_bot
-                  </a>
-                  <p className="text-sm opacity-80">Telegram бот для связи</p>
+                  <p className="font-montserrat font-medium">
+                    hello@roomroots.ru
+                  </p>
+                  <p className="text-sm opacity-80">Ответим в течение часа</p>
                 </div>
               </div>
 
