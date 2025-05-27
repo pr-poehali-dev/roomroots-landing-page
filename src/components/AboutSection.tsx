@@ -7,7 +7,8 @@ const AboutSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-moss-700 mb-6">
-              О студии RoomRoots
+              Отличное решение для современных интерьеров создаваемое вручную
+              человеком, для которого природа Карелии - это частица души!
             </h2>
             <p className="text-lg text-moss-600 mb-6 leading-relaxed">
               Мы создаем композиции, вдохновленные дикой природой Карелии —

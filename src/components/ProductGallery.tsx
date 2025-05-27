@@ -37,7 +37,7 @@ const ProductGallery = () => {
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-montserrat font-bold text-moss-700 mb-6">
-            Коллекция композиций
+            С чем мы работаем
           </h2>
           <p className="text-xl text-moss-600 max-w-3xl mx-auto">
             От уютных домашних панно до впечатляющих корпоративных инсталляций —
@@ -72,9 +72,24 @@ const ProductGallery = () => {
                   {product.title}
                 </h3>
                 <p className="text-moss-600 mb-6">{product.description}</p>
-                <button className="w-full bg-moss-500 hover:bg-moss-600 text-white py-3 rounded-full font-montserrat font-medium transition-colors duration-300">
-                  Узнать больше
-                </button>
+                <div className="flex gap-4">
+                  <a
+                    href="https://t.me/RoomRoots_bot"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-moss-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-moss-700 transition-colors"
+                  >
+                    Посмотреть коллекцию
+                  </a>
+                  <a
+                    href="https://t.me/RoomRoots_bot"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="border-2 border-moss-600 text-moss-600 px-8 py-3 rounded-lg font-medium hover:bg-moss-600 hover:text-white transition-colors"
+                  >
+                    Узнать больше
+                  </a>
+                </div>
               </div>
             </div>
           ))}
