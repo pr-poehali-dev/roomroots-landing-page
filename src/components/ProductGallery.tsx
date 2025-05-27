@@ -81,14 +81,6 @@ const ProductGallery = () => {
                   >
                     Посмотреть коллекцию
                   </a>
-                  <a
-                    href="https://t.me/RoomRoots_bot"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="border-2 border-moss-600 text-moss-600 px-8 py-3 rounded-lg font-medium hover:bg-moss-600 hover:text-white transition-colors"
-                  >
-                    Узнать больше
-                  </a>
                 </div>
               </div>
             </div>
